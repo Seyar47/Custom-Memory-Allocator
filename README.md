@@ -20,11 +20,13 @@ gcc -D MEMORY_ALLOCATOR_TEST enhanced-memory-allocator.c -o allocator
 ./allocator
 
 
-void initialize(void);
-void* my_malloc(size_t size);
-void my_free(void* ptr);
-void* my_realloc(void* ptr, size_t size);
-void* my_calloc(size_t count, size_t size);
+// Functions you can use in your own C code:
+    void initialize(void);
+    void* my_malloc(size_t size);
+    void my_free(void* ptr);
+    void* my_realloc(void* ptr, size_t size);
+    void* my_calloc(size_t count, size_t size);
+
 
 ------ Example Ouput ---
 ===== HEAP MAP =====
